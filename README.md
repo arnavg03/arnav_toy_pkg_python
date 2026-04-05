@@ -2,30 +2,34 @@
 
 |        |        |
 |--------|--------|
-| Package | [![Latest PyPI Version](https://img.shields.io/pypi/v/arnav_toy_pkg.svg)](https://pypi.org/project/arnav_toy_pkg/) [![Supported Python Versions](https://img.shields.io/pypi/pyversions/arnav_toy_pkg.svg)](https://pypi.org/project/arnav_toy_pkg/)  |
 | Meta   | [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md) |
 
-*TODO: the above badges that indicate python version and package version will only work if your package is on PyPI.
-If you don't plan to publish to PyPI, you can remove them.*
-
-arnav_toy_pkg is a project that (describe what it does here).
+`arnav_toy_pkg` is a demonstration Python package created for Assignment 5. It provides utility functions, including a clean implementation of the Quick Sort algorithm.
 
 ## Get started
 
-You can install this package into your preferred Python environment using pip:
+You can install this package into your preferred Python environment directly from TestPyPI:
 
-```bash
-$ pip install arnav_toy_pkg
-```
+    pip install -i https://test.pypi.org/simple/ arnav-toy-pkg
 
-TODO: Add a brief example of how to use the package to this section
+Alternatively, you can install it directly from the GitHub repository:
 
-To use arnav_toy_pkg in your code:
+    pip install git+https://github.com/arnavg03/arnav_toy_pkg_python.git
 
-```python
->>> import arnav_toy_pkg
->>> arnav_toy_pkg.hello_world()
-```
+## Usage
+
+Here is a quick example of how to use the sorting algorithm included in the package:
+
+    from arnav_toy_pkg.example import quick_sort
+
+    # Create an unsorted list
+    my_list = [34, 7, 23, 32, 5, 62, 32]
+
+    # Sort the list
+    sorted_list = quick_sort(my_list)
+
+    print(sorted_list)
+    # Output: [5, 7, 23, 32, 32, 34, 62]
 
 ## Copyright
 
