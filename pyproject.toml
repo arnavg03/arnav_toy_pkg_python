@@ -127,11 +127,11 @@ installer = "uv"
 # This table installs the tools you need to test and build your package
 [tool.hatch.envs.build]
 description = """Test the installation the package."""
-features = [
-    "build",
-]
 detached = true
 builder = true
+dependencies = [
+    "twine",
+]
 
 # This table installs created the command hatch run install:check which will build and check your package.
 [tool.hatch.envs.build.scripts]
